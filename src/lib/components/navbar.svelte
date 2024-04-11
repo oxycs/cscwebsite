@@ -18,11 +18,11 @@
         position:absolute;
         left:0px;
         top:0px;
-        min-height:5vh;
+        min-height:7vh;
     }
 
     .logoimg {
-        height: 4vh;
+        height: 6vh;
         padding-left: 10vw;
         padding-top: 0.5vh;
         position: absolute;
@@ -33,6 +33,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-height: 5vh;
+        min-height: 7vh;
     }
 </style>

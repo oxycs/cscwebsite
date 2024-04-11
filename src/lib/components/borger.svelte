@@ -3,6 +3,7 @@ import Fa from 'svelte-fa'
 import { faBars, faS } from '@fortawesome/free-solid-svg-icons'
 import { faSlack, faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { onMount } from 'svelte'
+import { page } from '$app/stores'; 
 
 let expanded = false
 let loaded = false
@@ -10,6 +11,10 @@ let loaded = false
 // wait for onMount to finish before running toggle
 onMount(() => {
     loaded = true
+    page.subscribe(value => {
+        document.querySelector("."+value.url.pathname.toString().replace("/", "")).classList.add('active')
+        document.querySelector("."+value.previous.url.pathname.toString().replace("/", "")).classList.remove('active')
+    })
 })
 
 function toggle() {
@@ -31,10 +36,10 @@ function toggle() {
 
 <div class="full">
     <ul>
-        <li><a href="/what-we-do">What We Do</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/events">Events</a></li>
+        <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
+        <li><a href="/about" class="about">About Us</a></li>
+        <li><a href="/resources" class="resources">Resources</a></li>
+        <li><a href="/events" class="events">Events</a></li>
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faSlack} /></a></div></li>
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faFacebook} /></a></div></li>
@@ -46,10 +51,10 @@ function toggle() {
 </div>
 <div class="expanded nodisplay">
     <ul>
-        <li><a href="/what-we-do">What We Do</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/events">Events</a></li>
+        <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
+        <li><a href="/about" class="about">About Us</a></li>
+        <li><a href="/resources" class="resources">Resources</a></li>
+        <li><a href="/events" class="events">Events</a></li>
         <span>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faSlack} /></a></div></li>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
@@ -80,12 +85,12 @@ function toggle() {
     .full > ul > li > a {
         text-decoration: none;
         color: #555;
-        font-size: 1vh;
+        font-size: 1.4vh;
         font-family: "Nunito";
     }
 
     .faIcon {
-        font-size: 1.8vh;
+        font-size: 2.5vh;
     }
 
     .full > ul > li > .faIcon > a {
@@ -129,13 +134,17 @@ function toggle() {
 
     .expanded > ul > span > li > .faIcon > a {
         color: #555;
-        font-size:5vh;
+        font-size:7vh;
     }
     
     button {
         background-color: white;
         border: none;
         font-size: 2.5vh;
+    }
+
+    :global(.active){
+        font-weight: 900;
     }
 
     @media screen and (orientation: landscape) {
@@ -160,7 +169,7 @@ function toggle() {
             position: absolute;
             right: 5vw;
             top: 0;
-            height:5vh;
+            height:7vh;
         }
 
 
@@ -169,7 +178,7 @@ function toggle() {
         }
 
         .expanded {
-            margin-top:5vh;
+            margin-top:7vh;
             z-index:100;
             background-color: white;
             width:100%;

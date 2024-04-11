@@ -14,7 +14,7 @@ import FloatingBox from "$lib/components/floatingBox.svelte";
 <style>
     /* add padding to top of content of 5vh */
     :global(body) {
-        padding-top: 5vh;
+        padding-top: 7vh;
         background-image: url('/img/2018-0608_JacarandaTrees-07.png');
         background-size: cover;
         background-repeat: no-repeat;
