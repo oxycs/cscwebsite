@@ -1,4 +1,5 @@
-
+<!-- this is the footer at the bottom of the page. -->
+<!-- it is a flexbox row. You can copy and paste more columncontainers to add additional sections. -->
 
 
 

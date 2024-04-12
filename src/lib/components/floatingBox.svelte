@@ -1,6 +1,7 @@
-
+<!-- this is the floating box style that we keep all pages in -->
 
 <div class="box">
+    <!-- slot is the content of the page -->
     <slot />
 </div>
 

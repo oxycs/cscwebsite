@@ -8,7 +8,7 @@ import { page } from '$app/stores';
 let expanded = false
 let loaded = false
 
-// wait for onMount to finish before running toggle
+// wait for onMount to finish before running toggle. onMount waits for the document to hydrate.
 onMount(() => {
     loaded = true
     page.subscribe(value => {
@@ -33,7 +33,7 @@ function toggle() {
 
 
 
-
+<!-- the "full" div is for desktop -->
 <div class="full">
     <ul>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
@@ -46,9 +46,13 @@ function toggle() {
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
     </ul>
 </div>
+
+<!-- the "collapsed" div is for mobile, and is only a menu button -->
 <div class="collapsed">
     <button on:click={toggle}><Fa icon={faBars} /></button>
 </div>
+
+<!-- the "expanded" div is for mobile, after the menu has been expanded -->
 <div class="expanded nodisplay">
     <ul>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
@@ -64,9 +68,7 @@ function toggle() {
         
     </ul>
 </div>
-
 <style>
-    /* display full > ul > li in a line */
     .full > ul {
         display: flex;
         list-style-type: none;
@@ -146,8 +148,11 @@ function toggle() {
     :global(.active){
         font-weight: 900;
     }
+        
+    /* if on desktop */
+    @media screen and (orientation: landscape) { 
 
-    @media screen and (orientation: landscape) {
+        
         .collapsed {
             display: none;
         }
@@ -156,6 +161,8 @@ function toggle() {
             display: none;
         }
     }
+
+    /* if on mobile */
     @media screen and (orientation: portrait) {
         .full {
             display: none;
