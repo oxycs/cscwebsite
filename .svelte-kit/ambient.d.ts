@@ -83,6 +83,7 @@ declare module '$env/static/private' {
 	export const SHLVL: string;
 	export const HOME: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
+	export const THEOS: string;
 	export const ATUIN_HISTORY_ID: string;
 	export const FIG_SET_PARENT: string;
 	export const npm_config_cache: string;
@@ -187,6 +188,7 @@ declare module '$env/dynamic/private' {
 		SHLVL: string;
 		HOME: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
+		THEOS: string;
 		ATUIN_HISTORY_ID: string;
 		FIG_SET_PARENT: string;
 		npm_config_cache: string;

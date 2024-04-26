@@ -125,4 +125,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-static/.DS_Store
+
+
+.DS_Store
+build
+.svelte-kit
