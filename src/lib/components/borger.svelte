@@ -1,7 +1,8 @@
 <script lang="ts">
 import Fa from 'svelte-fa'
 import { faBars, faS } from '@fortawesome/free-solid-svg-icons'
-import { faSlack, faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faOtter } from '@fortawesome/free-solid-svg-icons'
 import { onMount } from 'svelte'
 import { page } from '$app/stores'; 
 
@@ -40,9 +41,9 @@ function toggle() {
         <li><a href="/about" class="about">About Us</a></li>
         <li><a href="/resources" class="resources">Resources</a></li>
         <li><a href="/events" class="events">Events</a></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faSlack} /></a></div></li>
+        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faFacebook} /></a></div></li>
+        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
         <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
     </ul>
 </div>
@@ -60,9 +61,9 @@ function toggle() {
         <li><a href="/resources" class="resources">Resources</a></li>
         <li><a href="/events" class="events">Events</a></li>
         <span>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faSlack} /></a></div></li>
+            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faFacebook} /></a></div></li>
+            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
         </span>
         

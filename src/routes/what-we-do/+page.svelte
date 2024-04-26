@@ -1,6 +1,7 @@
 <script lang="ts">
     import Fa from 'svelte-fa'
-    import { faSlack, faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons' 
+    import { faGithub, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons' 
+    import { faOtter } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <div class="page">
@@ -20,9 +21,9 @@
     <div class="socials">
         <p>Find us here!</p>
         <ul>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faSlack} /></a></div></li>
+            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faFacebook} /></a></div></li>
+            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
             <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
         </ul>
     </div>
