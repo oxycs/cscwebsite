@@ -31,3 +31,9 @@ This will compile the website into an image, and automatically run it in a conta
 The container will be named "website", and it will be networked to the nginx installation. It will also expose port 8080.
 
 Once deployed to the server, you can access it via `https://csc.oxy.edu` publicly, or `http://oxycsc:8080` via Tailscale.
+
+To update the server after a git push, run the following command in the `cscwebsite` directory on the server:
+
+```bash
+git pull && sudo docker stop website && sudo docker rm website && sudo docker run -p 8902:8080 --name website --network nginx_default -itd $(sudo docker build -q .)
+```
