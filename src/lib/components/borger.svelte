@@ -5,6 +5,7 @@ import { faGithub, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-i
 import { faOtter } from '@fortawesome/free-solid-svg-icons'
 import { onMount } from 'svelte'
 import { page } from '$app/stores'; 
+import { raftrURL, githubURL, discordURL, instaURL } from '../../constants'
 
 let expanded = false
 let loaded = false
@@ -39,12 +40,13 @@ function toggle() {
     <ul>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
         <li><a href="/about" class="about">About Us</a></li>
+        <li><a href="/projects" class="projects">Projects</a></li>
         <li><a href="/resources" class="resources">Resources</a></li>
         <li><a href="/events" class="events">Events</a></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
-        <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
+        <li><div class="faIcon"><a href={raftrURL} target="_blank"><Fa icon={faOtter} /></a></div></li>
+        <li><div class="faIcon"><a href={githubURL} target="_blank"><Fa icon={faGithub} /></a></div></li>
+        <li><div class="faIcon"><a href={discordURL} target="_blank"><Fa icon={faDiscord} /></a></div></li>
+        <li><div class="faIcon"><a href={instaURL} target="_blank"><Fa icon={faInstagram} /></a></div></li>
     </ul>
 </div>
 
@@ -58,13 +60,14 @@ function toggle() {
     <ul>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
         <li><a href="/about" class="about">About Us</a></li>
+        <li><a href="/projects" class="projects">Projects</a></li>
         <li><a href="/resources" class="resources">Resources</a></li>
         <li><a href="/events" class="events">Events</a></li>
         <span>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
+            <li><div class="faIcon"><a href={raftrURL} target="_blank"><Fa icon={faOtter} /></a></div></li>
+            <li><div class="faIcon"><a href={githubURL} target="_blank"><Fa icon={faGithub} /></a></div></li>
+            <li><div class="faIcon"><a href={discordURL} target="_blank"><Fa icon={faDiscord} /></a></div></li>
+            <li><div class="faIcon"><a href={instaURL} target="_blank"><Fa icon={faInstagram} /></a></div></li>
         </span>
         
     </ul>

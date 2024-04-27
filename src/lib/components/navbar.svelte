@@ -6,7 +6,7 @@
 <!-- to add a page to the navbar, see borger.svelte -->
 
 <nav>
-<a href="/"><img class="logoimg" src="/img/oxyos-logo.svg" alt="Computer Science Club Logo"></a>
+<a href="/"><img class="logoimg" src="/img/oxycs-logo.svg" alt="Computer Science Club Logo"></a>
 <div class="hamburger">
     <Borger />
 </nav>

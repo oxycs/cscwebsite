@@ -2,6 +2,7 @@
     import Fa from 'svelte-fa'
     import { faGithub, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons' 
     import { faOtter } from '@fortawesome/free-solid-svg-icons'
+    import { raftrURL, githubURL, discordURL, instaURL } from '../../constants';
 </script>
 
 <div class="page">
@@ -21,10 +22,10 @@
     <div class="socials">
         <p>Find us here!</p>
         <ul>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faOtter} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faGithub} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faDiscord} /></a></div></li>
-            <li><div class="faIcon"><a href="https://example.com"><Fa icon={faInstagram} /></a></div></li>
+            <li><div class="faIcon"><a href={raftrURL} target="_blank"><Fa icon={faOtter} /></a></div></li>
+            <li><div class="faIcon"><a href={githubURL} target="_blank"><Fa icon={faGithub} /></a></div></li>
+            <li><div class="faIcon"><a href={discordURL} target="_blank"><Fa icon={faDiscord} /></a></div></li>
+            <li><div class="faIcon"><a href={instaURL} target="_blank"><Fa icon={faInstagram} /></a></div></li>
         </ul>
     </div>
 </div>
