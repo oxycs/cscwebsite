@@ -19,6 +19,16 @@
                 <a href="https://dining.csc.oxy.edu" target="_blank"><Fa icon={faArrowRight} /></a>
             </div>
         </div>
+        <div class="project">
+            <img class="projectimg" src="/img/quacs_logo.svg" alt="QuACS Logo">
+            <div class="projectinfo">
+                <h2>QuACS OXY</h2>
+                <p>Questionably Accurate Course Scheduler for Occidental College</p>
+            </div>
+            <div class="button">
+                <a href="https://quacs.nicholasnovak.io" target="_blank"><Fa icon={faArrowRight} /></a>
+            </div>
+        </div>
     </div>
     
     <style>
@@ -75,7 +85,7 @@
     
         .projectimg {
             height: 20vh;
-            max-width: 100%;
+            max-width: 40vh;
             object-fit: contain;
         }
     
