@@ -10,7 +10,7 @@
     
     <div class="projectlist">
         <div class="project">
-            <img class="projectimg" src="/img/grafanathumb.png" alt="Grafana Graph Thumbnail">
+            <img class="projectimg" src="/img/grafanathumb.jpg" alt="Grafana Graph Thumbnail">
             <div class="projectinfo">
                 <h2>Dining Busyness Graph</h2>
                 <p>A live chart displaying how busy each dining area on campus is.</p>
