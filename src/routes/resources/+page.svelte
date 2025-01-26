@@ -3,7 +3,7 @@
 </script>
 
 <div class="page">
-    <p class="heading">Want to join Oxy Open Source?</p>
+    <p class="heading">Want to join the Computer Science Club?</p>
     <p class="content">Subscribe to our mailing list and join us on Discord!</p>
     <p class="heading">Looking for advice/mentorship from an upperclassmen?</p>
     <p class="content">Join our buddy system! We can pair you with a student eager to help out.</p>
