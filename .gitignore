@@ -130,3 +130,5 @@ dist
 .DS_Store
 build
 .svelte-kit
+
+static/img/serverroom.png

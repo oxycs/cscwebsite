@@ -8,18 +8,20 @@ import FloatingBox from "$lib/components/floatingBox.svelte";
 
 
 <div class="navbar"><Navbar /></div>
-<div class="content"><FloatingBox><slot /></FloatingBox></div>
+<div class="content"><slot /></div>
 <div class="footer"><Footer /></div>
 
 <style>
     /* add padding to top of content of 5vh */
     :global(body) {
         padding-top: 7vh;
-        background-image: url('/img/2018-0608_JacarandaTrees-07.jpg');
+        margin-left: 0px;
+        margin-right: 0px;
+        /* background-image: url('/img/2018-0608_JacarandaTrees-07.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
     }
 
     .content {
