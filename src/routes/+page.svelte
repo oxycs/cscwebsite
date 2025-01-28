@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Event from "$lib/components/event.svelte";
+    import Eventrow from "$lib/components/eventrow.svelte";
 </script>
 
 <div class="main">
@@ -41,13 +41,7 @@
     </div>
     <div class="section three">
         <h2>Upcoming Events</h2>
-        <div class="eventrow">
-            <Event title="Internship Panel" date="Thursday, October 5th, 7:00 PM" location="Weingart 101" description="Come to our internship panel to hear from upperclassmen about their experiences getting internships!"></Event>
-            <Event title="Internship Panel" date="Thursday, October 5th, 7:00 PM" location="Weingart 101" description="Come to our internship panel to hear from upperclassmen about their experiences getting internships!"></Event>
-            <Event title="Internship Panel" date="Thursday, October 5th, 7:00 PM" location="Weingart 101" description="Come to our internship panel to hear from upperclassmen about their experiences getting internships!"></Event>
-            <Event title="Internship Panel" date="Thursday, October 5th, 7:00 PM" location="Weingart 101" description="Come to our internship panel to hear from upperclassmen about their experiences getting internships!"></Event>
-            <Event title="Internship Panel" date="Thursday, October 5th, 7:00 PM" location="Weingart 101" description="Come to our internship panel to hear from upperclassmen about their experiences getting internships!"></Event>
-        </div>
+        <Eventrow></Eventrow>
     </div>
     
 </div>
@@ -129,15 +123,6 @@
     }
     .rotright:hover {
         transform: scale(1.05) rotateZ(1deg);
-    }
-
-    .eventrow {
-        width:100%;
-        overflow:scroll;
-        white-space: nowrap;
-        flex-direction: row;
-        scrollbar-width: none;
-        padding-bottom: 1vh;
     }
 
     .title {
