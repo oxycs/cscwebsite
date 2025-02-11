@@ -1,8 +1,8 @@
 <script lang="ts">
     import Fa from 'svelte-fa'
-    import { faGithub, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons' 
+    import { faGithub, faDiscord, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
     import { faOtter } from '@fortawesome/free-solid-svg-icons'
-    import { raftrURL, githubURL, discordURL, instaURL } from '../../constants';
+    import { raftrURL, githubURL, discordURL, instaURL, linkedInURL } from '../../constants';
 </script>
 
 <div class="page">
@@ -26,6 +26,7 @@
             <li><div class="faIcon"><a href={githubURL} target="_blank"><Fa icon={faGithub} /></a></div></li>
             <li><div class="faIcon"><a href={discordURL} target="_blank"><Fa icon={faDiscord} /></a></div></li>
             <li><div class="faIcon"><a href={instaURL} target="_blank"><Fa icon={faInstagram} /></a></div></li>
+            <li><div class="faIcon"><a href={linkedInURL} target="_blank"><Fa icon={faLinkedin} /></a></div></li>
         </ul>
     </div>
 </div>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import Eventrow from "$lib/components/eventrow.svelte";
 </script>
-
+<title>Oxy Computer Science Club</title>
 <div class="main">
     <div class="section one fullheight">
         <div class="title">
