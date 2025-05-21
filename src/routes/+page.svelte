@@ -68,7 +68,7 @@
     }
     
     .one {
-        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/img/serverroom.png');        
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/img/serverroom.jpg');        
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
