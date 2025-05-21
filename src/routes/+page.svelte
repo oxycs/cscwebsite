@@ -18,7 +18,7 @@
             <p>Make your voice heard in the Computer Science Department! We give feedback to them directly, helping to improve your learning experience.</p>
         </div>
         <div class="half rotleft">
-            <img src="/img/grafanathumb.png" alt="PLACEHOLDER">
+            <img src="/img/omac.jpg" alt="oMac Lab">
         </div>
     </div>
     <div class="section two swapimg">
@@ -27,7 +27,7 @@
             <p>We organize Computer Science social events, so you can get to know others who share your interest. </p>
         </div>
         <div class="half rotright">
-            <img src="/img/grafanathumb.png" alt="PLACEHOLDER">
+            <img src="/img/cscmeeting.png" alt="CS Club Meeting">
         </div>
     </div>
     <div class="section two">

@@ -2,22 +2,24 @@
     import Fa from 'svelte-fa'
     import { faGithub, faDiscord, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
     import { faOtter } from '@fortawesome/free-solid-svg-icons'
-    import { raftrURL, githubURL, discordURL, instaURL, linkedInURL } from '../../constants';
+    import { raftrURL, githubURL, discordURL, instaURL, linkedInURL, emailAddr, emailPlaintext } from '../../constants';
 </script>
 
 <div class="page">
-    <span class="title"><p>What we do at Oxy Open Source</p></span>
+    <span class="title"><p>What we do at the Oxy Computer Science Club</p></span>
 
     <div class="lines">
-        <p>🧑‍🤝‍🧑 Throw a social hour every friday</p>
-        <p>📅 Host an event every two weeks</p>
-        <p>📽️ Oversee the completion of four open-source projects, annually</p>
-        <p>🌱 Hold Workspace, a hub for collaboration, two times a week</p>
+        <p>🧑‍🤝‍🧑 Throw a social events, so that members can meet</p>
+        <p>📅 Host events to discuss topics in technology</p>
+        <p>📽️ Oversee the completion of collaborative open-source projects</p>
+        <p>🌱 Hold workspaces, as a hub for collaboration</p>
         <p>🗳️ Voice student input in CS department meetings</p>
         <p>🤝 Manage a buddy system to connect students with mentors</p>
+        <p>📧 Maintain a mailing list for internships, employment, and other CS topics</p>
+        <p>🖥️ Host projects on a server</p>
     </div>
 
-    <span class="endline"><p> Got any more questions? Email us at <span class="orangetext"><a href="mailto:opensource@oxy.edu">opensource@oxy.edu</a></span>, or check out our Q&A on commonly asked questions at the <span class="orangetext"><a href="/resources">resources</a></span> page!</p></span>
+    <span class="endline"><p> Got any more questions? Email us at <span class="orangetext"><a href={emailAddr}>{emailPlaintext}</a></span>, or check out our Q&A on commonly asked questions at the <span class="orangetext"><a href="/resources">resources</a></span> page!</p></span>
 
     <div class="socials">
         <p>Find us here!</p>
