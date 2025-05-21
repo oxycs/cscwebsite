@@ -1,3 +1,7 @@
+<script>
+	import { emailAddr, emailPlaintext } from "../../constants";
+
+</script>
 <!-- this is the footer at the bottom of the page. -->
 <!-- it is a flexbox row. You can copy and paste more columncontainers to add additional sections. -->
 
@@ -12,7 +16,7 @@
         <div class="columncontainer">
             <p>1600 Campus Road</p>
             <p>Los Angeles, CA 90041</p>
-            <a href="mailto:opensource@oxy.edu">opensource@oxy.edu</a>
+            <a href={emailAddr}>{emailPlaintext}</a>
         </div>
     </div>
 </footer>
