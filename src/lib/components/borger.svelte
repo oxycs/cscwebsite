@@ -14,6 +14,9 @@ let loaded = false
 onMount(() => {
     loaded = true
     page.subscribe(value => {
+        if (value.url.pathname.toString() == "/") {
+            value.url.pathname = "/home";
+        }
         document.querySelector("."+value.url.pathname.toString().replace("/", "")).classList.add('active')
         document.querySelector("."+value.previous.url.pathname.toString().replace("/", "")).classList.remove('active')
     })
@@ -38,6 +41,7 @@ function toggle() {
 <!-- the "full" div is for desktop -->
 <div class="full">
     <ul>
+        <li><a href="/" class="home">Home</a></li>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
         <li><a href="/about" class="about">About Us</a></li>
         <li><a href="/projects" class="projects">Projects</a></li>
@@ -59,6 +63,7 @@ function toggle() {
 <!-- the "expanded" div is for mobile, after the menu has been expanded -->
 <div class="expanded nodisplay">
     <ul>
+        <li><a href="/" class="home">Home</a></li>
         <li><a href="/what-we-do" class="what-we-do">What We Do</a></li>
         <li><a href="/about" class="about">About Us</a></li>
         <li><a href="/projects" class="projects">Projects</a></li>

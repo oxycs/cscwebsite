@@ -9,7 +9,7 @@
     <Arrowitem img="/img/gmailscreenshot.png" imgalt="Gmail Screenshot" title="Loooking for advice/mentorship from an upperclassmen?" description="Join our buddy system! We can pair you with a student eager to help out." url={emailAddr}></Arrowitem>
     <Arrowitem img="/img/SCR-20250126-rme.png" imgalt="Q&A PDF" title="Have a burning question about Computer Science at Oxy?" description="We've answered as many as we could in this Computer Science Q&A" url="/pdf/qa.pdf"></Arrowitem>
     <Arrowitem img="/img/SCR-20250126-rnl.png" imgalt="Opportunities Mailing List Screenshot" title="Stay up to date on internship and research opportunities" description="Join the CS Department's opportunities mailing list!" url="https://groups.google.com/a/oxy.edu/g/compsci-opportunities-g"></Arrowitem>
-    <Arrowitem img="/img/serverroom.jpg" imgalt="Server Room" title="Need a place to host your CS project?" description="We'll host it for you on the Computer Science Club's server! Email us to learn more." url={emailAddr}></Arrowitem>
+    <Arrowitem img="/img/serverroom-optim.jpg" imgalt="Server Room" title="Need a place to host your CS project?" description="We'll host it for you on the Computer Science Club's server! Email us to learn more." url={emailAddr}></Arrowitem>
 
     
     <p class="heading">Past Presentations and Workshops</p>
