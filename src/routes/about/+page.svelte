@@ -6,48 +6,51 @@
     <p>Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students</p>
 
     <div class="membercontainer">
-
-        <div class="member">
-            <img src="/img/placeholder.png" alt="Portrait photograph member">
-            <p class="name">Alyanna McGrath</p>
-            <p class="title">President</p>
-        </div>
-        <div class="member">
-            <img src="/img/placeholder.png" alt="Portrait photograph member">
-            <p class="name">Nick Novak</p>
-            <p class="title">President</p>
-        </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
             <p class="name">Ethan Schoen</p>
-            <p class="title">Head of Finance</p>
+            <p class="title">President</p>
         </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
             <p class="name">Liv Gilbert-Adler</p>
-            <p class="title">Head of Projects</p>
+            <p class="title">President</p>
+        </div>
+        <div class="member">
+            <img src="/img/placeholder.png" alt="Portrait photograph member">
+            <p class="name">James Huh</p>
+            <p class="title">Head of Events</p>
         </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
             <p class="name">Tiffany Mo</p>
+            <p class="title">Head of Community Engagement</p>
+        </div>
+        <div class="member">
+            <img src="/img/placeholder.png" alt="Portrait photograph member">
+            <p class="name">Jenny Lee</p>
             <p class="title">Head of Marketing</p>
         </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
-            <p class="name">Brian Cuellar</p>
-            <p class="title">Head of Community Engagement</p>
+            <p class="name">Trisha Bhima</p>
+            <p class="title">Head of Equity</p>
         </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
-            <p class="name">Roselyn Chin</p>
-            <p class="title">Head of Community Engagement</p>
+            <p class="name">Danny Kim</p>
+            <p class="title">Head of Events</p>
         </div>
         <div class="member">
             <img src="/img/placeholder.png" alt="Portrait photograph member">
-            <p class="name">Jadriel Delim</p>
-            <p class="title">Head of Event Coordination</p>
+            <p class="name">Finlay McAfee</p>
+            <p class="title">Head of Projects</p>
         </div>
-
+        <div class="member">
+            <img src="/img/placeholder.png" alt="Portrait photograph member">
+            <p class="name">Gisela Roberts</p>
+            <p class="title">Head of Equity</p>
+        </div>
     </div>
 </div>
 
