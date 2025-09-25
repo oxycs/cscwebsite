@@ -10,7 +10,7 @@
 
 <a href={url} target="_blank">
 	<!-- <img class="projectimg" src={img} alt={imgalt} /> -->
-    <div class="imgbg" style="background-image: url({img});"></div>
+	<div class="imgbg" style="background-image: url({img});"></div>
 	<div class="projectinfo">
 		<h2>{title}</h2>
 		<p>{description}</p>
@@ -37,22 +37,22 @@
 		font-family: 'Nunito', sans-serif;
 	}
 
-    .imgbg {
-        width: calc(173px * (16/9));
-        height: 173px;
-        background-size: calc(173px * (16/9)) auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+	.imgbg {
+		width: calc(173px * (16 / 9));
+		height: 173px;
+		background-size: calc(173px * (16 / 9)) auto;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
 	@media screen and (orientation: portrait) {
 		a {
 			flex-direction: column;
 		}
 
-        .imgbg {
-            max-width: 100%;
-        }
+		.imgbg {
+			max-width: 100%;
+		}
 	}
 
 	@media screen and (orientation: landscape) {
@@ -71,6 +71,8 @@
 		align-items: center;
 		flex-direction: column;
 		width: 50%;
+		text-align: center;
+		padding: 0.75em 2em;
 	}
 
 	.projectinfo > h2 {
