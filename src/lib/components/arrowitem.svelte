@@ -71,6 +71,8 @@
 		align-items: center;
 		flex-direction: column;
 		width: 50%;
+		text-align: center;
+		padding: 0.75em 2em;
 	}
 
 	.projectinfo > h2 {
