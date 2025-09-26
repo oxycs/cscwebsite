@@ -93,6 +93,7 @@
 		font-size: 4vh;
 		color: #555;
 		text-decoration: none;
+		padding-bottom: 0.5em;
 	}
 
 	.button:hover {

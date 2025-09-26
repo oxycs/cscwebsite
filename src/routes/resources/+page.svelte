@@ -56,11 +56,13 @@
 
 <style>
 	.content {
-		font-size: 1.5vh;
-		margin: 0;
+		font-size: 1em;
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.heading {
-		font-size: 2vh;
+		font-size: 1.33em;
 		margin-bottom: 0.8vh;
 	}
 	.page {
